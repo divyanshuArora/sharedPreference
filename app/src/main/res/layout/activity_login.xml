@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".Login">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_email"
+        android:layout_width="match_parent"
+        android:textColorHint="#999191"
+        android:layout_marginTop="30dp"
+        android:hint="Registered Paytm Mobile Number"
+        android:layout_height="wrap_content">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/number"
+        android:inputType="number"
+        android:textColorHint="#000000"
+        android:singleLine="true"
+        android:layout_margin="10dp"
+        />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_password"
+        android:layout_width="match_parent"
+        android:hint="Paytm Password"
+        app:passwordToggleEnabled="true"
+        android:textColorHint="#999191"
+        android:layout_height="wrap_content">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pass"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:textColorHint="#C5BEBE"
+        android:layout_margin="10dp"
+        />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trouble Logging in?"
+        android:textColor="#0091EA"
+        android:layout_gravity="right"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By Logging in, you agree to our"
+        android:textSize="12sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#292828"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms &amp;"
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#0091EA"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conditions"
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#0091EA"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&amp; Privacy Policy."
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#292828"
+            />
+    </LinearLayout>
+
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:padding="10dp"
+        android:text="Login Securely"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_securely"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_marginTop="10dp"
+        >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="2"
+            android:layout_margin="5dp"
+            android:background="#7E7A7A"
+            ></View>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="#7E7A7A"
+            android:textSize="10sp"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="2"
+            android:layout_margin="5dp"
+            android:background="#7E7A7A"
+            ></View>
+
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create a New Account"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#00B8D4"
+        android:id="@+id/registerIntent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/create_new"
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
